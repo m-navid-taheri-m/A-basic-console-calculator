@@ -11,7 +11,7 @@
             string numInput1 = "";
             string numInput2 = "";
             double result = 0;
-
+            double lastResult = 0;
             Console.Write("Type a number, and then press Enter: ");
             numInput1 = Console.ReadLine();
 
@@ -37,6 +37,12 @@
             Console.WriteLine("\ts - Subtract");
             Console.WriteLine("\tm - Multiply");
             Console.WriteLine("\td - Divide");
+            Console.WriteLine("\tp - Power");
+            Console.WriteLine("\tab - Abstraction (First entered number)");
+            Console.WriteLine("\tcos- Cosine (First entered number)");
+            Console.WriteLine("\tsin- Sine   (First entered number)");
+            Console.WriteLine("\tsqr- Square root (First entered number)");
+
             Console.Write("Your option? ");
 
             string op = Console.ReadLine();
@@ -57,12 +63,19 @@
             }
 
             Console.WriteLine("------------------------\n");
-
+            
             Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
-            if (Console.ReadLine() == "n") endApp = true;
 
-            Console.WriteLine("\n");
+            Console.WriteLine("Do you still want to work with the last result ?y/n");
+
+            if (Console.ReadLine() == "n") endApp = true;
+                        Console.WriteLine("\n");
         }
         return;
     }
 }
+
+
+
+
+
